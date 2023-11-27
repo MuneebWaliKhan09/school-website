@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#fad899;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 23px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .openbtn{
+    display: none;
+  }
+  
+
+@media only screen and (max-width: 926px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+
+    .openbtn{
+        display: block;
+    }
+
+    .navllinks{
+        display: none;
+    }
+    .navbar{
+        padding-right: 2rem;
+    }
+
+    
+}
+@media only screen and (max-width: 768px) {
+
+    .heroinner{
+        font-size: medium;   
+        flex-direction: column;
+        padding-right: 1.5rem !important;
+
+    }
+    h1{
+        font-size: 2.5rem !important;
+
+    }
+    p{
+        max-width: 100% !important;
+    }
+
+    h2{
+        font-size: 2rem !important;
+    }
+    .hero{
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+
+
+    }
+
+    .onlinecenters{
+        flex-direction: column;
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+
+
+    }
+    .startlearn{
+        flex-direction: column;
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+
+
+    }
+
+    .subscribe{
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+
+
+    }
+    .subsdiv{
+        flex-direction: column;
+    }
+
+    .startgrow{
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+    }
+    .growinner{
+        padding-left: 1.5rem !important;
+        overflow: unset;
+    }
+    .growsecimages img{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .maingrowingimg {
+      top: auto;
+      bottom: 50%;
+      right: 10%;
+
+    }
+    .maingrowingimg img{
+        height: 15rem;
+        width: 15rem;
+
+    }
+    .growbutton button{
+        align-self: flex-start;
+        padding: 15px 10px;
+    }
+    footer{
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+        text-align: center;
+    }
+    .wrapper{
+        flex-direction: column;
+        justify-content: center !important;
+        text-align: center;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+    .footerwrapper{
+        flex-direction: column;
+    }
+    .footerwrapper > div:nth-child(1){
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
